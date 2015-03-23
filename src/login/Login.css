@@ -1,0 +1,60 @@
+/* 
+    Created on : Mar 4, 2015, 7:34:02 PM
+    Author     : Tanisha
+*/
+// applied to the .root node of the Scene instance
+.root 
+{
+    // This loads a background image.
+     -fx-background-image: url("background.jpg");
+}
+
+// Next we do the labels this will effect all labels.
+/*This example increases the font size and weight and applies a drop shadow of a gray color (#333333). The purpose of the drop shadow is to add contrast between the dark gray text and the light gray background*/
+.label
+{
+    -fx-font-size: 15 px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-efect:dropshadow( gaussian, rgba(255,255,255,0.5),0,0,0,1);  
+}
+
+// Id for the welcome Text
+#welcometext
+{
+    -fx-font-size: 32px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #818181;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+// Id for the actiontarget Text
+#actiontarget
+{
+    -fx-fill: FIREBRICK;
+    -fx-font-weight:bold;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+// The dot applies to all.
+.button 
+{
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover 
+{
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.table-row-cell:empty {
+    -fx-background-color: lightyellow;
+}
+ 
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
